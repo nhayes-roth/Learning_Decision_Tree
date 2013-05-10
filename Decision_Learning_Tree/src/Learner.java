@@ -172,7 +172,7 @@ public class Learner{
     public static ArrayList<String []> fileToArrayList(String filename){		
     	ArrayList<String []> list = new ArrayList<String []>();
     	 try{
-    		FileInputStream fstream = new FileInputStream("resources/" + filename);
+    		FileInputStream fstream = new FileInputStream(filename);
     		DataInputStream in = new DataInputStream(fstream);
     		BufferedReader br = new BufferedReader(new InputStreamReader(in));
     		String strLine;
